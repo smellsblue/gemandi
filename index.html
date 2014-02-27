@@ -9,6 +9,18 @@
     </script>
 
     <script type="text/javascript">
+      var changeSlideTo = function(nextValue) {
+        var $next = $(".slide[data-slide='" + nextValue + "']");
+
+        if ($next.size() == 0) {
+          return false;
+        }
+
+        $(".slide").hide();
+        $next.show();
+        return true;
+      };
+
       $(document).on("click", ".next-slide, .prev-slide", function() {
         var current = parseInt($(".slide:visible").data("slide"), 10);
         var nextValue = current;
@@ -19,23 +31,36 @@
           nextValue -= 1;
         }
 
-        var $next = $(".slide[data-slide='" + nextValue + "']");
-
-        if ($next.size() == 0) {
-          return;
+        if (changeSlideTo(nextValue)) {
+          document.location.hash = nextValue;
         }
 
-        $(".slide").hide();
-        $next.show();
         return false;
       });
+
+      var changeToHashSlide = function() {
+        var hash = document.location.hash.replace(/^#/, "");
+
+        if (/^\d+$/.test(hash) && $(".slide[data-slide='" + hash + "']").length > 0) {
+          changeSlideTo(hash);
+          return true;
+        }
+
+        return false;
+      };
 
       $(function() {
         $(".slide").each(function(i) {
           $(this).attr("data-slide", "" + (i + 1));
         });
 
-        $(".slide[data-slide='1']").show();
+        if (!changeToHashSlide()) {
+          changeSlideTo(1);
+        }
+
+        $(window).on("hashchange", function() {
+          changeToHashSlide();
+        });
       });
     </script>
 
@@ -63,6 +88,7 @@
 
       .slide {
         display: none;
+        min-height: 750px;
         text-align: center;
       }
     </style>
@@ -77,6 +103,48 @@
     <div class="slide">
       <h2>Gem and I</h2>
       <img src="images/gemandi.png" />
+    </div>
+
+    <div class="slide">
+      <h2>What is a gem?</h2>
+    </div>
+
+    <div class="slide">
+      <h2>What is a gem?</h2>
+      <img src="images/gems.png" width="500" />
+    </div>
+
+    <div class="slide">
+      <h2>What is a gem?</h2>
+      <img src="images/Jem.jpg" width="400" />
+    </div>
+
+    <div class="slide">
+      <h2>What is a gem?</h2>
+      <img src="images/ruby-logo.png" width="400" />
+    </div>
+
+    <div class="slide">
+      <img src="images/cookiejar.jpg" />
+    </div>
+
+    <div class="slide">
+      <img src="images/Java-Logo.png" />
+      <br />
+      <img src="images/cookiejar.jpg" />
+    </div>
+
+    <div class="slide">
+      <img src="images/cmd.jpg" />
+    </div>
+
+    <div class="slide">
+    </div>
+
+    <div class="slide">
+    </div>
+
+    <div class="slide">
     </div>
 
     <div class="slide">
