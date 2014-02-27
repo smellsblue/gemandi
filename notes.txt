@@ -5,5 +5,7 @@ Slide 5
   We'll be talking about these gems.  But what is it?
 Slide 6-8
   It's kind of like a jar.  Not this kind of jar.... but this kind.  Examples
-Slide 
-  You can also make it 
+Slide 9-10
+  You can also make it into an executable.  Examples
+Slide 11-
+  Rails is a gem.
