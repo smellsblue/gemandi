@@ -31,6 +31,10 @@
       });
 
       $(function() {
+        $(".slide").each(function(i) {
+          $(this).attr("data-slide", "" + (i + 1));
+        });
+
         $(".slide[data-slide='1']").show();
       });
     </script>
@@ -57,7 +61,8 @@
         font-size: 50;
       }
 
-      img.gem-and-i {
+      .slide {
+        text-align: center;
       }
     </style>
   </head>
@@ -68,15 +73,12 @@
       <input type="button" class="next-slide" value="next" />
     </p>
 
-    <div class="slide" data-slide="1" style="display: none;">
-      <h1>Gem and I</h1>
-
-      <p>
-        <img class="gem-and-i" />
-      </p>
+    <div class="slide" style="display: none;">
+      <h2>Gem and I</h2>
+      <img src="images/gemandi.png" />
     </div>
 
-    <div class="slide" data-slide="2" style="display: none;">
+    <div class="slide" style="display: none;">
     </div>
 
     <p>
