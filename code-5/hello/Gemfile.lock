@@ -37,7 +37,7 @@ GEM
     coffee-script-source (1.7.0)
     erubis (2.7.0)
     execjs (2.0.2)
-    hello-dash-con (0.0.4)
+    hello-dash-con (0.0.5)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)

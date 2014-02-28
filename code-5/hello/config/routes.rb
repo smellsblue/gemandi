@@ -1,4 +1,5 @@
 Hello::Application.routes.draw do
+  get "hello" => "hello#index"
   root :to => "hello_dash_con#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
