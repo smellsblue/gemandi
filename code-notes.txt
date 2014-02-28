@@ -12,5 +12,7 @@ $ hello-dash-con
 
 Code 4: How to make a Rails Engine out of your gem
 $ rails new hello
+$ # Implement your engine
+$ # Use your engine
 
 Code 5: Making it into an Asset Gem
