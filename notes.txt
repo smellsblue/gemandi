@@ -9,7 +9,9 @@ Slide 9-10
   You can also make it into an executable.  Examples
 Slide 11-12
   Rails is a gem.  Rails is lots of gems
-Slide 13-
+Slide 13-14
   Rails engines.  Plugins for Rails packaged as a gem.
-Slide -
+Slide 15-16
   Rails asset (engine) gems.
+Slide 17
+  Ready for some code?
