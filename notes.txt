@@ -7,5 +7,9 @@ Slide 6-8
   It's kind of like a jar.  Not this kind of jar.... but this kind.  Examples
 Slide 9-10
   You can also make it into an executable.  Examples
-Slide 11-
-  Rails is a gem.
+Slide 11-12
+  Rails is a gem.  Rails is lots of gems
+Slide 13-
+  Rails engines.  Plugins for Rails packaged as a gem.
+Slide -
+  Rails asset (engine) gems.
