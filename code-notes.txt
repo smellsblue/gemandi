@@ -20,3 +20,5 @@ $ # Use your engine
 Code 5: Making it into an Asset Gem
 $ # Implement or copy in your assets
 $ # Use your assets
+
+# Push the gem and show it on rubygems.org
