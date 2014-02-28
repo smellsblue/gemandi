@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+begin
+  require "hello_dash_con"
+rescue LoadError
+  require "rubygems"
+  require "hello_dash_con"
+end
+
+HelloDashCon.say_message!
