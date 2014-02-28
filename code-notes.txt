@@ -1,1 +1,12 @@
-bundle gem hello-dash-con
+Code 1: Generate the initial gem
+$ bundle gem hello-dash-con
+
+Code 2: Implement your gem
+$ # Move files around as desired and implement the gem.
+$ # Utilize the gem in your project
+
+Code 3: How to make executables out of it
+
+Code 4: How to make a Rails Engine out of your gem
+
+Code 5: Making it into an Asset Gem
