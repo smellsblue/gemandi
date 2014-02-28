@@ -4,8 +4,11 @@ $ bundle gem hello-dash-con
 Code 2: Implement your gem
 $ # Move files around as desired and implement the gem.
 $ # Utilize the gem in your project
+$ ./hello.rb
 
 Code 3: How to make executables out of it
+$ # Implement bin files
+$ hello-dash-con
 
 Code 4: How to make a Rails Engine out of your gem
 
