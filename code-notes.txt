@@ -1,3 +1,5 @@
+NOTE: Beware of `git ls-files` in gemspec....
+
 Code 1: Generate the initial gem
 $ bundle gem hello-dash-con
 
@@ -16,3 +18,5 @@ $ # Implement your engine
 $ # Use your engine
 
 Code 5: Making it into an Asset Gem
+$ # Implement or copy in your assets
+$ # Use your assets
