@@ -5,5 +5,9 @@ module HelloDashCon
     def message
       "Magandang hapon DashCon!"
     end
+
+    def say_message!
+      puts message
+    end
   end
 end
